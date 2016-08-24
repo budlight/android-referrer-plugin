@@ -47,6 +47,7 @@ public class Receiver extends BroadcastReceiver {
                     for (String sourceType : sources) {
                         String source = getParams.get(sourceType);
                         edit.putString(sourceType, source);
+                        Log.d("referrer", "key: " + sourceType + " value: " + source);
                     }
 
                 } catch (UnsupportedEncodingException e) {
